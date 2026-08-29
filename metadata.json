@@ -1,0 +1,7 @@
+{
+  "name": "Smart View Labs",
+  "description": "Smart View Labs (SVL) - 360° Virtual Tour & Digital Marketing Agency led by Google Trusted Photographers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
