@@ -121,13 +121,15 @@ export const Header: React.FC<HeaderProps> = ({ activeSection, onNavigate }) => 
           <div 
             id="brand-logo"
             onClick={() => handleNavClick('hero')}
-            className="flex items-center gap-2 sm:gap-3 cursor-pointer group shrink-0"
+            className="flex items-center gap-2.5 sm:gap-3.5 cursor-pointer group shrink-0"
           >
-            {/* 3D Glass Logo Capsule */}
-            <div className="relative w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-sky-600 via-cyan-500 to-sky-400 p-0.5 shadow-md group-hover:scale-105 transition-transform duration-200 shrink-0">
-              <div className="w-full h-full bg-white rounded-[10px] flex items-center justify-center">
-                <Compass className="w-4 h-4 sm:w-5 sm:h-5 text-sky-600 group-hover:rotate-90 transition-transform duration-500" />
-              </div>
+            {/* SVL Hexagonal Official Logo */}
+            <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-xl p-0.5 shadow-md group-hover:scale-105 transition-transform duration-200 shrink-0 flex items-center justify-center">
+              <img 
+                src="/images/logo.svg" 
+                alt="Smart View Labs Logo" 
+                className="w-full h-full object-contain drop-shadow-sm" 
+              />
               <div className="absolute -top-0.5 -right-0.5 w-2.5 h-2.5 sm:w-3 sm:h-3 bg-emerald-500 rounded-full border-2 border-white" title="Active Google Partner" />
             </div>
 
@@ -245,8 +247,12 @@ export const Header: React.FC<HeaderProps> = ({ activeSection, onNavigate }) => 
             <div>
               <div className="flex items-center justify-between pb-4 border-b border-slate-100">
                 <div className="flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-lg bg-sky-600 text-white flex items-center justify-center font-bold shadow-sm shrink-0">
-                    <Compass className="w-5 h-5" />
+                  <div className="w-9 h-9 rounded-xl p-0.5 shadow-sm shrink-0 flex items-center justify-center">
+                    <img 
+                      src="/images/logo.svg" 
+                      alt="Smart View Labs Logo" 
+                      className="w-full h-full object-contain" 
+                    />
                   </div>
                   <div>
                     <h3 className="font-heading font-bold text-slate-900 text-sm sm:text-base">Smart View Labs</h3>

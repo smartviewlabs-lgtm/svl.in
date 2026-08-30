@@ -27,11 +27,20 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Col 1: Brand & Bio (4 Cols) */}
         <div className="lg:col-span-4 space-y-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-sky-600 text-white flex items-center justify-center shadow-md">
-              <Compass className="w-6 h-6" />
+            <div className="w-11 h-11 rounded-xl p-0.5 shadow-md flex items-center justify-center shrink-0">
+              <img 
+                src="/images/logo.svg" 
+                alt="Smart View Labs Logo" 
+                className="w-full h-full object-contain" 
+              />
             </div>
             <div>
-              <h3 className="font-heading font-extrabold text-lg text-white">Smart View Labs</h3>
+              <div className="flex items-center gap-1.5">
+                <h3 className="font-heading font-extrabold text-lg text-white">Smart View Labs</h3>
+                <span className="px-1.5 py-0.2 text-[9px] font-extrabold text-sky-400 bg-sky-950/80 rounded border border-sky-800 uppercase tracking-wider">
+                  SVL
+                </span>
+              </div>
               <p className="text-xs text-sky-400 font-medium">360° VR & Digital Marketing Agency</p>
             </div>
           </div>

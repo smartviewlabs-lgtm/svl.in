@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Facet 1: Top Pink / Red / Magenta -->
+    <linearGradient id="grad-top" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#FF5252" />
+      <stop offset="50%" stop-color="#FF1744" />
+      <stop offset="100%" stop-color="#E91E63" />
+    </linearGradient>
+
+    <!-- Facet 2: Right Purple / Violet / Indigo -->
+    <linearGradient id="grad-right" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9C27B0" />
+      <stop offset="50%" stop-color="#673AB7" />
+      <stop offset="100%" stop-color="#3F51B5" />
+    </linearGradient>
+
+    <!-- Facet 3: Bottom Cyan / Teal / Emerald -->
+    <linearGradient id="grad-bottom" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#00E5FF" />
+      <stop offset="60%" stop-color="#00B0FF" />
+      <stop offset="100%" stop-color="#00838F" />
+    </linearGradient>
+
+    <!-- Facet 4: Bottom-Left Yellow / Gold -->
+    <linearGradient id="grad-bottom-left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFC107" />
+      <stop offset="70%" stop-color="#FFD54F" />
+      <stop offset="100%" stop-color="#00E5FF" />
+    </linearGradient>
+
+    <!-- Facet 5: Left Orange / Amber -->
+    <linearGradient id="grad-left" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#FF9800" />
+      <stop offset="50%" stop-color="#FF6D00" />
+      <stop offset="100%" stop-color="#FF5252" />
+    </linearGradient>
+
+    <!-- Hexagon Drop Shadow Filter -->
+    <filter id="logo-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <g filter="url(#logo-shadow)">
+    <!-- Outer Hexagonal Facets Ribbon -->
+    
+    <!-- Top Ribbon (Red to Pink) -->
+    <path d="M 256,16 L 370,82 L 276,146 L 162,80 Z" fill="url(#grad-top)" />
+    <path d="M 256,16 L 476,142 L 396,188 L 276,146 Z" fill="#D81B60" />
+
+    <!-- Right Ribbon (Purple / Indigo) -->
+    <path d="M 476,142 L 476,370 L 396,324 L 396,188 Z" fill="url(#grad-right)" />
+    
+    <!-- Bottom Right to Center Cyan Ribbon Fold -->
+    <path d="M 476,370 L 256,496 L 256,410 L 396,324 Z" fill="url(#grad-bottom)" />
+    <path d="M 256,496 L 140,430 L 256,410 Z" fill="#00ACC1" />
+
+    <!-- Bottom Left Ribbon (Yellow & Lime-Teal Fold) -->
+    <path d="M 140,430 L 36,370 L 116,324 L 256,410 Z" fill="url(#grad-bottom-left)" />
+
+    <!-- Left Ribbon (Orange to Amber) -->
+    <path d="M 36,370 L 36,142 L 116,188 L 116,324 Z" fill="url(#grad-left)" />
+    
+    <!-- Top Left Connecting Fold (Amber to Red) -->
+    <path d="M 36,142 L 256,16 L 162,80 L 116,188 Z" fill="#FF5722" />
+
+    <!-- Inner Clean White Hexagon Core -->
+    <polygon points="256,86 404,172 404,340 256,426 108,340 108,172" fill="#FFFFFF" />
+
+    <!-- SVL Center Logo Typography -->
+    <text 
+      x="256" 
+      y="288" 
+      text-anchor="middle" 
+      font-family="'Space Grotesk', 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" 
+      font-size="108" 
+      font-weight="900" 
+      letter-spacing="-1.5" 
+      fill="#1A273D"
+    >
+      SVL
+    </text>
+  </g>
+</svg>
